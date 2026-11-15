@@ -1,0 +1,23 @@
+{
+  "name": "stripe-checkout-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hosted checkout + webhook flow with Stripe test mode, with a no-key demo fallback",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.5.6",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "stripe": "18.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.0",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "typescript": "5.9.2"
+  }
+}

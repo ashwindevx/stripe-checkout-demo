@@ -18,7 +18,7 @@ export default function PricingPage() {
         {demoMode && <span className="badge-demo">Demo mode - no Stripe key set</span>}
       </header>
       <section style={{ textAlign: "center", padding: "48px 0 32px" }}>
-        <h1 style={{ fontSize: "2.4rem" }}>Pricing that scales with you</h1>
+        <h1 style={{ fontSize: "2.4rem" }}>Pricing</h1>
         <p className="muted" style={{ maxWidth: "52ch", margin: "0 auto" }}>
           Pick a plan and check out with Stripe. Use the test card{" "}
           <code>4242 4242 4242 4242</code>, any future date and any CVC.

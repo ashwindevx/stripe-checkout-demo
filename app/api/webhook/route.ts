@@ -2,8 +2,7 @@ import { NextResponse } from "next/server";
 import { getStripe } from "@/lib/stripe";
 import type Stripe from "stripe";
 
-// Receives Stripe events. Verify the signature, then handle the events the
-// app cares about. In production, fulfil the subscription in your database.
+// Verify the signature first; handle only the events the app needs.
 export async function POST(req: Request) {
   const stripe = getStripe();
   const secret = process.env.STRIPE_WEBHOOK_SECRET;

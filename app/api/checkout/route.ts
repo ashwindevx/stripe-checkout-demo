@@ -9,8 +9,7 @@ export async function POST(req: Request) {
 
   const stripe = getStripe();
   if (!stripe) {
-    // Demo mode: render a local, clearly-labelled simulation of the
-    // Stripe Checkout page so the flow works with zero configuration.
+    // No key configured: fall back to the local simulated checkout page.
     return NextResponse.json({ url: `/demo-checkout?plan=${plan}` });
   }
 
